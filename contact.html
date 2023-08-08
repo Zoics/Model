@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background: white;
+      }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="nav">
+      <ion-icon name="person-circle-outline" id="person"></ion-icon>
+      <div class="name">Zoe</div>
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="index.html"><b>Home</b></a>
+          </li>
+          <li><a href="project.html">Projects</a></li>
+          <li>
+            <a href="contact.html"><b>Contact Me</b></a>
+          </li>
+          <li>
+            <a href="about.html"><b>About</b></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="contact-container">
+      <div class="model-container" id="container-model">
+        <div class="model">
+          <h3 style="color: rgb(112, 112, 195)">Thanks For Submitting</h3>
+        </div>
+      </div>
+      <div class="illustration">
+        <img
+          src="phone.svg"
+          alt="phone"
+          class="illustration-img"
+          width="800px"
+        />
+      </div>
+      <div class="contact">
+        <img src="avatar.svg" class="profile-contact-img" alt="" />
+        <h1>Contact Me</h1>
+        <p>Please feel free to contact me</p>
+        <h4>Your Information</h4>
+        <form
+          action="https://formsubmit.co/zmmmg.master@gmail.com"
+          method="POST"
+        >
+          <div class="form-container">
+            <div class="input-container">
+              <div class="icon">
+                <ion-icon
+                  name="person-circle-outline"
+                  id="person-circle-outline"
+                  class="ionicons"
+                ></ion-icon>
+              </div>
+              <div class="form-input">
+                <input
+                  type="text"
+                  class="input-item"
+                  name="name"
+                  id="name"
+                  placeholder=" "
+                />
+                <label for="name" class="form-label">Name</label>
+              </div>
+            </div>
+            <div class="input-container">
+              <ion-icon name="map" id="map" class="ionicons"></ion-icon>
+              <div class="form-input">
+                <input
+                  type="text"
+                  name="city"
+                  id="city"
+                  class="input-item"
+                  placeholder=" "
+                />
+                <label for="city" class="form-label">City</label>
+              </div>
+            </div>
+            <div class="input-container">
+              <ion-icon
+                name="mail-open"
+                id="mail-open"
+                class="ionicons"
+              ></ion-icon>
+              <div class="form-input">
+                <input
+                  type="text"
+                  class="input-item"
+                  name-="email"
+                  id="email"
+                  class="form-label"
+                  placeholder=" "
+                />
+                <label for="email" class="form-label">Email</label>
+              </div>
+            </div>
+            <div class="textarea-container">
+              <ion-icon
+                name="chatbox-outline"
+                id="chatbox-outline"
+                class="ionicons2"
+              ></ion-icon>
+
+              <div class="form-textarea">
+                <textarea
+                  class="textarea"
+                  type="text"
+                  name="message"
+                  id="message"
+                  cols="52"
+                  rows="8"
+                  placeholder=" "
+                >
+                </textarea>
+                <label for="message" class="form-label">Message</label>
+
+                <input type="submit" id="submit" onclick="modelAppear()" />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

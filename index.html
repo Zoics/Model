@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <ion-icon name="person-circle-outline" id="person"></ion-icon>
+        <div class="name">Zoe</div>
+        <div class="menu">
+          <ul>
+            <li><a href="project.html">Projects</a></li>
+            <li>
+              <a href="contact.html"><b>Contact Me</b></a>
+            </li>
+            <li>
+              <a href="about.html"><b>About</b></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="jumbotron">
+        <div id="x">
+          <h2>DAPATKAN TIPS PROGRAMMING DI SINI!!</h2>
+          <h3 data-aos="fade-right">
+            Baru di dunia programming? Belajar lewat pengembangan
+            <span style="color: orange"> Web & Game</span> sederhana!
+          </h3>
+          <hr />
+          <p class="mini-text">Belajar programming basic di sini</p>
+          <button id="icon-up" onclick="changeText()">
+            <ion-icon name="arrow-up-outline"></ion-icon></button
+          ><button id="icon-down">
+            <ion-icon name="arrow-down-outline"></ion-icon>
+          </button>
+        </div>
+        <div>
+          <img
+            src="jumbo1.png"
+            alt=""
+            onmouseover="changeImage(this)"
+            onmouseout="changeImageBack(this)"
+            class="jumbotron-img"
+          />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div id="slider" class="section-slider">
+        <div class="image-slider">
+          <div class="slide active">
+            <img src="cool gaming.jpg" />
+            <div class="slide-text">
+              <h2>Game Development :</h2>
+              <p>
+                Instead of playing game all day long, why not create your own?
+              </p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="hous.jpg" />
+            <div class="slide-text">
+              <h2>Web Development :</h2>
+              <p>
+                Every company need website. Take advantage of that opportunity!
+              </p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="flower.jpg" />
+            <div class="slide-text">
+              <h2>Web Design :</h2>
+              <p>Color, Transition, Animation are cool.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="kid gaming.jpg" />
+            <div class="slide-text">
+              <h2>Kids Programming :</h2>
+              <p>Better know earlier with a fun way of arranging blocks.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="phone.jpg" />
+            <div class="slide-text">
+              <h2>Mobile Apps Development :</h2>
+              <p>Mobile apps are very popular and most needed in this world.</p>
+            </div>
+          </div>
+        </div>
+        <div class="navigation">
+          <div class="slider-btn" active”></div>
+          <div class="slider-btn"></div>
+          <div class="slider-btn"></div>
+          <div class="slider-btn"></div>
+          <div class="slider-btn"></div>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <aside>
+          <div>
+            <h3 class="aside-title">It's Zoe</h3>
+            <img
+              src="Zoe.jpg.jpg"
+              alt=""
+              class="profile-picture"
+              height="auto"
+            />
+          </div>
+        </aside>
+        <div class="content">
+          <div class="videolist">
+            <div class="video">
+              <h2>What is coding?</h2>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/XMZFUnAgOqs"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video">
+              <h2>Coding is Not Difficult</h2>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/hb7Q33ysCwI"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <div class="location">
+                <h2>Location</h2>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.6886985554606!2d106.70818447428367!3d-6.304569661699036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e501f96d6653%3A0x3a002b738b4bf9e5!2sSweet_bd!5e0!3m2!1sen!2sid!4v1687257905098!5m2!1sen!2sid"
+                  width="480"
+                  height="360"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="info-name"><h2>Zoe The Programmer</h2></div>
+      <div class="logo-footer">
+        <ion-icon name="logo-twitter"></ion-icon
+        ><ion-icon name="logo-instagram"></ion-icon>
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="mail-outline"></ion-icon>
+      </div>
+      <hr />
+      <h3>Copyright © 2021. Cobee. All rights reserved.</h3>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

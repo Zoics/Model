@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <ion-icon name="person-circle-outline" id="person"></ion-icon>
+        <div class="name">Zoe</div>
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="index.html"><b>Home</b></a>
+            </li>
+            <li><a href="project.html">Projects</a></li>
+            <li>
+              <a href="contact.html"><b>Contact Me</b></a>
+            </li>
+            <li>
+              <a href="about.html"><b>About</b></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="jumbotron">
+        <div id="x">
+          <h2>DAPATKAN TIPS PROGRAMMING DI SINI!!</h2>
+          <h3>
+            Baru di dunia programming? Belajar lewat pengembangan
+            <span style="color: orange"> Web & Game</span> sederhana!
+          </h3>
+          <hr />
+          <p class="mini-text">Belajar programming basic di sini</p>
+          <button id="icon-up" onclick="changeText()">
+            <ion-icon name="arrow-up-outline"></ion-icon></button
+          ><button id="icon-down">
+            <ion-icon name="arrow-down-outline"></ion-icon>
+          </button>
+        </div>
+        <div>
+          <img
+            src="jumbo1.png"
+            alt=""
+            onmouseover="changeImage(this)"
+            onmouseout="changeImageBack(this)"
+            class="jumbotron-img"
+          />
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="page-title">
+        <h1>My Project Details</h1>
+      </div>
+      <div class="all-projects">
+        <article id="scratch-project">
+          <div class="project-detail"><div class="project-img"></div></div>
+        </article>
+      </div>
+    </main>
+    <footer>
+      <div class="info-name"><h2>Zoe The Programmer</h2></div>
+      <div class="logo-footer">
+        <ion-icon name="logo-twitter"></ion-icon
+        ><ion-icon name="logo-instagram"></ion-icon>
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="mail-outline"></ion-icon>
+      </div>
+      <hr />
+      <h3>Copyright © 2021. Cobee. All rights reserved.</h3>
+    </footer>
+  </body>
+</html>

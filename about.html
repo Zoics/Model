@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <ion-icon name="person-circle-outline" id="person"></ion-icon>
+        <div class="name">Zoe</div>
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="index.html"><b>Home</b></a>
+            </li>
+            <li><a href="project.html">Projects</a></li>
+            <li>
+              <a href="contact.html"><b>Contact Me</b></a>
+            </li>
+            <li>
+              <a href="about.html"><b>About</b></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="jumbotron">
+        <div id="x">
+          <h2>DAPATKAN TIPS PROGRAMMING DI SINI!!</h2>
+          <h3>
+            Baru di dunia programming? Belajar lewat pengembangan
+            <span style="color: orange"> Web & Game</span> sederhana!
+          </h3>
+          <hr />
+          <p class="mini-text">Belajar programming basic di sini</p>
+          <button id="icon-up" onclick="changeText()">
+            <ion-icon name="arrow-up-outline"></ion-icon></button
+          ><button id="icon-down">
+            <ion-icon name="arrow-down-outline"></ion-icon>
+          </button>
+        </div>
+        <div>
+          <img
+            src="jumbo1.png"
+            alt=""
+            onmouseover="changeImage(this)"
+            onmouseout="changeImageBack(this)"
+            class="jumbotron-img"
+          />
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="about"></section>
+      <section id="skill"></section>
+      <section id="activity"></section>
+      <div class="section-container">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">My Introduction</p>
+        <div class="about-image">
+          <img class="blob-image" src="blob.jpg" alt="Blob Image" />
+          <img class="blogger-image" src="Normal1.png" alt="Profile Picture" />
+        </div>
+        <div class="about-description">
+          <p>
+            I am Cobee, 16 years old student who lives in Denpasar. I started to
+            learn coding when I was an elementary student. I was learning
+            Scratch and create a simple Memory Game with my own code. From that
+            day, I become a fan of coding and started to learn more, for example
+            Javascript Game using Phaser Framework and also Web Development.
+          </p>
+          <h4>Cobee</h4>
+        </div>
+      </div>
+      <div class="section-container">
+        <h2 class="section-title">Skills</h2>
+        <p class="section-subtitle">
+          My Technical Skill for 3 years Learn Coding
+        </p>
+        <div class="skills-flex">
+          <div class="skill-item">
+            <img src="scratch.png" alt="Scratch" />
+            <h4>Game Development with Scratch</h4>
+            <p>1 year</p>
+          </div>
+          <div class="skill-item">
+            <img src="phaser.png" alt="Phaser" />
+            <h4>Game Development with Phaser</h4>
+            <p>2 years</p>
+          </div>
+          <div class="skill-item">
+            <img src="html.png" alt="HTML" />
+            <h4>Website Development</h4>
+            <p>1 year</p>
+          </div>
+        </div>
+      </div>
+      <div class="section-container">
+        <section class="section-title">Activities</section>
+        <div class="activity-flex">
+          <div class="activity-item">
+            <img src="activity1.jpg" alt="Scratch" />
+          </div>
+          <div class="activity-item">
+            <img src="activity2.jpg" alt="Phaser" />
+          </div>
+          <div class="activity-item">
+            <img src="activity3.jpg" alt="HTML" />
+          </div>
+          <div class="activity-item">
+            <img src="activity4.jpg" alt="Scratch" />
+          </div>
+          <div class="activity-item">
+            <img src="activity5.jpg" alt="Phaser" />
+          </div>
+          <div class="activity-item">
+            <img src="activity6.jpg" alt="HTML" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="info-name"><h2>Zoe The Programmer</h2></div>
+      <div class="logo-footer">
+        <ion-icon name="logo-twitter"></ion-icon
+        ><ion-icon name="logo-instagram"></ion-icon>
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="mail-outline"></ion-icon>
+      </div>
+      <hr />
+      <h3>Copyright © 2021. Cobee. All rights reserved.</h3>
+    </footer>
+  </body>
+</html>
