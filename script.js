@@ -50,8 +50,8 @@ var repeat = function (activeClass) {
       [...active].forEach(function (activeSlide) {
         activeSlide.classList.remove("active");
       });
-
-      buttons[i]?.classList.add("active");
+      slides[i].classList.add("active");
+      buttons[i].classList.add("active");
       i++;
       if (slides.length == i) {
         i = 0;
@@ -77,3 +77,36 @@ function modelAppear() {
   console.log(model);
   model.style.visibility = "visible";
 }
+
+var animate = document.querySelector(".astronaut-takeoff");
+
+if (animate) {
+  document.addEventListener("DOMContentLoaded", function (event) {
+    setTimeout(function () {
+      animate.classList.add(".animation");
+    }, 400);
+  });
+}
+var splash = document.querySelector(".splash");
+if (splash) {
+  document.addEventListener("DOMContentLoaded", function (event) {
+    setTimeout(function () {
+      splash.style.display = "none";
+    }, 3000);
+  });
+}
+var animate = document.querySelector(".astronaut-takeoff");
+if (animate) {
+  document.addEventListener("DOMContentLoaded", function (event) {
+    setTimeout(function () {
+      animate.classList.add("animation");
+    }, 400);
+  });
+}
+var splashText = document.querySelector(".splash-text");
+if (splashText) {
+  setTimeout(function () {
+    splashText.innerHTML = "Come in!";
+  }, 2000);
+}
+AOS.init();
